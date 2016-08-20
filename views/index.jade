@@ -3,7 +3,7 @@ html
 	head
 		title File Metadata Microservice
 	body
-		form(action='/form' method='POST')
+		form(action='/' method='POST' enctype="multipart/form-data")
 			h2 Pick a file to view its size
 			input(type='file' name='file')
-			input(type='submit' value='Submit File')
+			input(type='submit' value='Get File Size...')
