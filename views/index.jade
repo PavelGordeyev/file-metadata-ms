@@ -3,7 +3,7 @@ html
 	head
 		title File Metadata Microservice
 	body
-		form
-			p Pick a file to view it's size
-			button Browse...
+		form(action='/form' method='POST')
+			h2 Pick a file to view its size
+			input(type='file' name='file')
 			input(type='submit' value='Submit File')
